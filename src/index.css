@@ -11,3 +11,30 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.input-containter {
+  @apply border border-title rounded-[4px] 
+  /* focus-within:outline focus-within:outline-blue focus-within:outline-[2px] 
+  focus-within:border-clear*/
+}
+
+.input-name-signup {
+  @apply absolute px-4 pt-[22px] text-[18px] leading-[23px] select-none
+        group-focus-within:pt-[8px] group-focus-within:text-[13px] group-focus-within:leading-[15px] 
+        group-focus-within:text-blue-300;
+}
+
+.input-name-text-signup {
+  @apply absolute px-4 pt-[8px] text-[13px] leading-[15px] select-none;
+}
+
+.input-text {
+  @apply text-xl w-full
+  input rounded-none
+  focus:outline-none focus:border-none
+}
+
+.input-textarea {
+  @apply text-xl w-full
+  textarea rounded-none focus:outline-none focus:border-none
+}
