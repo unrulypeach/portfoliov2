@@ -1,7 +1,7 @@
 function AboutText() {
   return (
     <div className="flex flex-col flex-1 pl-20">
-      <h2 className="text-[#b7c7e8] text-8xl font-bold">About</h2>
+      <h2 className="title">About</h2>
       <div className="py-8">
         <div className="font-bold">Linda Chen</div>
         <div className="">Full Stack Developer</div>
