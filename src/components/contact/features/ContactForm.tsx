@@ -6,8 +6,8 @@ function ContactForm() {
   const [msg, setMsg] = useState('');
 
   return (
-    <form className="pt-24 px-20 flex-1">
-      <div className="max-w-[30vw] flex flex-col">
+    <form className="pt-40 pl-10 flex-1">
+      <div className="max-w-[30vw] flex flex-col p-4">
         <div className="py-4 px-0">
           <div className="group border border-borderGrey rounded-[4px] focus-within:outline focus-within:outline-blue-300 focus-within:outline-[2px]">
             <label className="">
@@ -82,7 +82,7 @@ function ContactForm() {
               </div>
               <div className="pt-6 bg-[#1d232a]">
                 <textarea
-                  className="input-textarea"
+                  className="input-textarea h-40"
                   maxLength={50}
                   placeholder=" "
                   required
