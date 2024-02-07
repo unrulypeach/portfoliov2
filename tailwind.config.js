@@ -7,6 +7,8 @@ module.exports = {
       ...colors,
       title: '#b7c7e8',
       borderGrey: '#90a1c3',
+      iconbg: '#333333',
+      icon: '#dddddd',
     },
     extend: {},
   },
