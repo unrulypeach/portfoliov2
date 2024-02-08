@@ -18,14 +18,13 @@ function ProjectWeather() {
           </div>
           <div className="badge gap-2 h-6 mr-2 bg-iconbg">
             {api}
-            <span className="text-icon">openweather api</span>
+            <span className="text-icon">openweathermap</span>
           </div>
         </div>
         <div className="py-4 max-w-[700px]">
-          There are many variations of passages of Lorem Ipsum available, but the majority have
-          suffered alteration in some form, by injected humour, or randomised words which dont look
-          even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-          sure there isnt anything embarrassing hidden in the middle of text.
+          The weather app, built with JavaScript, provides real-time updates on weather conditions
+          through OpenWeatherMap. It is set up with Webpack to efficiently deploy and manage
+          dependencies.
         </div>
         <div className="py-4">
           <a className="btn btn-sm h-10 px-8" href="https://unrulypeach.github.io/weather-app/">

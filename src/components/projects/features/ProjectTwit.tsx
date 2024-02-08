@@ -2,34 +2,47 @@ import profile_bob from 'assets/project-screenshots/edited_twitter_profile_bobro
 import signup from 'assets/project-screenshots/edited_twitter_signup.png';
 
 import { react, typescript, mongodb, express, nodejs, newtab } from 'assets/icons';
+import { useState } from 'react';
 
 function ProjectTwit() {
+  const slides = [profile_bob, signup];
+  const [slide, setSlide] = useState(slides[0]);
+  function nextSlide() {
+    const currSlideInd = slides.findIndex((el) => el === slide);
+    if (currSlideInd === slides.length - 1) {
+      return setSlide(slides[0]);
+    }
+    setSlide(slides[currSlideInd + 1]);
+  }
+  function prevSlide() {
+    const currSlideInd = slides.findIndex((el) => el === slide);
+    if (currSlideInd === 0) {
+      return setSlide(slides[slides.length - 1]);
+    }
+    setSlide(slides[currSlideInd - 1]);
+  }
+
+  setTimeout(nextSlide, 2500);
+
   return (
     <div className="flex my-40">
       <div className="flex-1">
         <div className="max-w-[40vw]">
-          <div className="carousel w-full">
-            <div id="slide1" className="carousel-item relative w-full">
-              <img src={profile_bob} className="w-full" />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
-                <a href="#slide2" className="btn btn-circle opacity-20 hover:opacity-90">
-                  <span>❮</span>
-                </a>
-                <a href="#slide2" className="btn btn-circle opacity-20 hover:opacity-90">
-                  <span>❯</span>
-                </a>
-              </div>
-            </div>
-            <div id="slide2" className="carousel-item relative w-full">
-              <img src={signup} className="w-full" />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
-                <a href="#slide1" className="btn btn-circle opacity-20 hover:opacity-90">
-                  ❮
-                </a>
-                <a href="#slide1" className="btn btn-circle opacity-20 hover:opacity-90">
-                  ❯
-                </a>
-              </div>
+          <div className="relative">
+            <img src={slide} alt="" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
+              <button
+                className="btn btn-circle opacity-20 hover:opacity-90"
+                onClick={() => prevSlide()}
+              >
+                <span>❮</span>
+              </button>
+              <button
+                className="btn btn-circle opacity-20 hover:opacity-90"
+                onClick={() => nextSlide()}
+              >
+                <span>❯</span>
+              </button>
             </div>
           </div>
         </div>
@@ -59,10 +72,10 @@ function ProjectTwit() {
           </div>
         </div>
         <div className="py-4 max-w-[700px]">
-          There are many variations of passages of Lorem Ipsum available, but the majority have
-          suffered alteration in some form, by injected humour, or randomised words which dont look
-          even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-          sure there isnt anything embarrassing hidden in the middle of text.
+          A full-stack clone of Twitter with a meticulously replicated UI. Initially developed with
+          Firebase for the backend, an API endpoint was later created along with using MongoDB for a
+          database. Users can create an account, create posts, replies, follow users, and like
+          posts!
         </div>
         <div className="py-4">
           <a className="btn btn-sm h-10 px-8" href="https://twitter-replica-orpin.vercel.app/">

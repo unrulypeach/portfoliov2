@@ -24,11 +24,13 @@ function ProjectMemory() {
             <span className="text-icon">eslint</span>
           </div>
         </div>
-        <div className="py-4 max-w-[700px]">
-          There are many variations of passages of Lorem Ipsum available, but the majority have
-          suffered alteration in some form, by injected humour, or randomised words which dont look
-          even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-          sure there isnt anything embarrassing hidden in the middle of text.
+        <div className="pt-4 max-w-[700px]">
+          A memory card game with 5 randomly selected characters from a set. Click on each image
+          once as new sets are produced. Avoid clicking on any duplicates to win!
+        </div>
+        <div className="italic text-sm pb-4">
+          The game is currently unavailable due to recent changes in RapidAPI, rendering the API
+          inaccessible
         </div>
         <div className="py-4">
           <a className="btn btn-sm h-10 px-8" href="https://unrulypeach.github.io/memory-card/">
