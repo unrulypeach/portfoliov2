@@ -1,4 +1,5 @@
 @import './styles/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 body {
   margin: 0;
@@ -12,12 +13,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.App {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.circle {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border: 0.5rem solid #e9e9e900;
+    border-top: 0.5rem solid #3498db;
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0
+}
+
 h2.title {
-  @apply text-title text-8xl font-bold
+  @apply text-title text-8xl font-black
 }
 
 h3.title {
   @apply text-title text-4xl font-bold
+}
+
+.badge-styled {
+  @apply border-icon badge gap-2 h-6 mr-2 bg-iconbg
+}
+
+.btn-newpg {
+  @apply btn btn-sm bg-iconbg text-icon border-none h-10 hover:text-black hover:bg-icon
 }
 
 .input-containter {
@@ -29,20 +57,20 @@ h3.title {
 .input-name-signup {
   @apply absolute px-4 pt-[22px] text-[18px] leading-[23px] select-none
         group-focus-within:pt-[8px] group-focus-within:text-[13px] group-focus-within:leading-[15px] 
-        group-focus-within:text-blue-300;
+        group-focus-within:text-blue-300 text-title
 }
 
 .input-name-text-signup {
-  @apply absolute px-4 pt-[8px] text-[13px] leading-[15px] select-none;
+  @apply absolute px-4 pt-[8px] text-[13px] leading-[15px] select-none
 }
 
 .input-text {
-  @apply text-xl w-full
+  @apply text-xl w-full bg-lightBG
   input rounded-none
   focus:outline-none focus:border-none
 }
 
 .input-textarea {
-  @apply text-xl w-full
+  @apply text-xl w-full bg-lightBG
   textarea rounded-none focus:outline-none focus:border-none
 }

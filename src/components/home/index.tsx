@@ -1,12 +1,16 @@
+import JumpToTop from 'components/features/JumpToTop';
 import Header from './features/Header';
 import Title from './features/Title';
 
 function Home() {
   return (
-    <div className="bg-black h-screen flex flex-col justify-between">
-      <Header />
-      <Title />
-    </div>
+    <>
+      <JumpToTop />
+      <div id="home" className="bg-black flex flex-col justify-between h-screen snap-center">
+        <Header />
+        <Title />
+      </div>
+    </>
   );
 }
 

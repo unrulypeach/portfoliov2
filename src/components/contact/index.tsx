@@ -3,7 +3,7 @@ import ContactTitle from './features/ContactTitle';
 
 function Contact() {
   return (
-    <div id="contact" className="h-screen bg-black">
+    <div id="contact" className="bg-lightBG h-screen snap-center">
       <div className="flex h-[inherit]">
         <ContactTitle />
         <ContactForm />

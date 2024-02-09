@@ -11,7 +11,7 @@ function ContactForm() {
         <div className="py-4 px-0">
           <div className="group border border-borderGrey rounded-[4px] focus-within:outline focus-within:outline-blue-300 focus-within:outline-[2px]">
             <label className="">
-              <div className="flex flex-row absolute">
+              <div className="flex flex-row relative">
                 {name.length > 0 ? (
                   <div className="input-name-text-signup">
                     <span>Name</span>
@@ -40,7 +40,7 @@ function ContactForm() {
         <div className="py-4 px-0">
           <div className="group border border-borderGrey rounded-[4px] focus-within:outline focus-within:outline-blue-300 focus-within:outline-[2px]">
             <label className="">
-              <div className="flex flex-row absolute">
+              <div className="flex flex-row relative">
                 {email.length > 0 ? (
                   <div className="input-name-text-signup">
                     <span>Email</span>
@@ -69,7 +69,7 @@ function ContactForm() {
         <div className="py-4 px-0">
           <div className="group border border-borderGrey rounded-[4px] focus-within:outline focus-within:outline-blue-300 focus-within:outline-[2px]">
             <label className="">
-              <div className="flex flex-row absolute">
+              <div className="flex flex-row relative">
                 {msg.length > 0 ? (
                   <div className="input-name-text-signup">
                     <span>Message</span>
@@ -94,7 +94,7 @@ function ContactForm() {
             </label>
           </div>
         </div>
-        <button className="mt-4 btn w-full">Submit</button>
+        <button className="mt-4 btn bg-title hover:bg-icon text-lightBG w-full">Submit</button>
       </div>
     </form>
   );

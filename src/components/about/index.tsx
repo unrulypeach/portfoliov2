@@ -4,7 +4,7 @@ import DonutAnimation from './features/DonutAnimation';
 
 function About() {
   return (
-    <div id="about" className="h-screen">
+    <div id="about" className="h-screen snap-center bg-[#212429]">
       <div className="flex p-16 h-[inherit]">
         {/* <DonutAnimation /> */}
         <div className="flex-1 pr-4 h-[inherit]">

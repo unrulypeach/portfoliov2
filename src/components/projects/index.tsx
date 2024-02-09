@@ -6,8 +6,10 @@ import ProjectWeather from './features/ProjectWeather';
 function Projects() {
   return (
     <div id="projects" className="h-fit p-16 bg-black">
-      <h2 className="title pb-16">Featured Projects</h2>
-      <ProjectTwit />
+      <div className="h-full snap-center">
+        <h2 className="title pb-16">Featured Projects</h2>
+        <ProjectTwit />
+      </div>
       <ProjectCart />
       <ProjectMemory />
       <ProjectWeather />

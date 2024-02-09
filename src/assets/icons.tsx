@@ -71,7 +71,13 @@ export const reactrouter = (
 );
 
 export const newtab = (
-  <svg viewBox="0 0 24 24" fill="#dddddd" height="1em" width="1em">
+  <svg
+    className="group-hover:fill-black"
+    viewBox="0 0 24 24"
+    fill="#dddddd"
+    height="1em"
+    width="1em"
+  >
     <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7z" />
   </svg>
 );
@@ -91,5 +97,50 @@ export const js = (
 export const webpack = (
   <svg viewBox="0 0 24 24" fill="#dddddd" height="1em" width="1em">
     <path d="M22.199 18.498L12.429 24v-4.285l6.087-3.334 3.683 2.117zm.668-.603V6.388l-3.575 2.055v7.396zm-21.066.603L11.571 24v-4.285L5.484 16.38l-3.683 2.117zm-.668-.603V6.388l3.575 2.055v7.396zm.418-12.251L11.571 0v4.143L5.152 7.66l-.049.028zm20.898 0L12.429 0v4.143l6.419 3.516.049.028 3.552-2.043zM11.57 18.74l-6.005-3.287V8.938l6.005 3.453v6.349zm.858 0l6.005-3.287V8.938l-6.005 3.453zM5.972 8.185l6.03-3.302 6.028 3.301-6.029 3.467z" />
+  </svg>
+);
+
+export const gmail = (
+  <svg
+    className="max-h-[34px]"
+    width="1.34rem"
+    height="1rem"
+    viewBox="0 0 134 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_1:194)">
+      <path
+        d="M9.09091 100H30.303V48.4848L0 25.7576V90.9091C0 95.9394 4.07576 100 9.09091 100Z"
+        fill="#4285F4"
+      />
+      <path
+        d="M103.03 100H124.242C129.273 100 133.333 95.9242 133.333 90.9091V25.7576L103.03 48.4848"
+        fill="#34A853"
+      />
+      <path
+        d="M103.03 9.09091V48.4848L133.333 25.7576V13.6364C133.333 2.39394 120.5 -4.01515 111.515 2.72727"
+        fill="#FBBC04"
+      />
+      <path
+        d="M30.303 48.4848V9.09091L66.6667 36.3636L103.03 9.09091V48.4848L66.6667 75.7576"
+        fill="#EA4335"
+      />
+      <path
+        d="M0 13.6364V25.7576L30.303 48.4848V9.09091L21.8182 2.72727C12.8182 -4.01515 0 2.39394 0 13.6364"
+        fill="#C5221F"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_1:194">
+        <rect width="133.333" height="100" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const up = (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
   </svg>
 );
