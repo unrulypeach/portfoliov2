@@ -28,10 +28,6 @@ function ProjectMemory() {
           A memory card game with 5 randomly selected characters from a set. Click on each image
           once as new sets are produced. Avoid clicking on any duplicates to win!
         </div>
-        <div className="italic text-sm pb-4 text-icon">
-          The game is currently unavailable due to recent changes in RapidAPI, rendering the API
-          inaccessible
-        </div>
         <div className="py-4">
           <a className="btn-newpg px-8 group" href="https://unrulypeach.github.io/memory-card/">
             Live Demo{newtab}
