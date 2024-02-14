@@ -2,7 +2,11 @@ import NavBtn from './NavBtn';
 
 function NavBar() {
   return (
-    <div className="flex justify-end py-5 pr-8">
+    // <div className="flex justify-end py-5 pr-8">
+    <div
+      className="flex flex-col items-center w-full
+                desktop:w-auto desktop:flex-row"
+    >
       <NavBtn title="about" />
       <NavBtn title="projects" />
       <NavBtn title="resume" />
