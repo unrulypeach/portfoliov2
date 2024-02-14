@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 function JumpToTop() {
   return (
     <a href="#home">
-      <div className="flex items-center absolute right-12 bottom-8 h-min w-24 stroke-title">
-        <span className="pointer-events-none text-xs relative left-[43px] top-[7px] text-black opacity-30">
+      <div className="flex items-center absolute right-[-4px] desktop:right-12 bottom-8 h-min w-20 desktop:w-24 stroke-title">
+        <span className="pointer-events-none text-xs relative left-[36.5px] desktop:left-[43px] top-[7px] text-black opacity-30">
           TOP
         </span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="6 -2 11 11">
