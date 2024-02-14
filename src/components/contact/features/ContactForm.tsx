@@ -12,7 +12,7 @@ function ContactForm() {
   };
 
   return (
-    <form className="pt-40 pl-10 flex-1">
+    <form className="hidden desktop:block desktop:pt-60 desktop:pl-10 desktop:flex-1">
       <div className="max-w-[30vw] flex flex-col p-4">
         <div className="py-4 px-0">
           <div className="group border border-borderGrey rounded-[4px] focus-within:outline focus-within:outline-blue-300 focus-within:outline-[2px]">
