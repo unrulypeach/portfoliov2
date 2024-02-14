@@ -5,9 +5,9 @@ import ProjectWeather from './features/ProjectWeather';
 
 function Projects() {
   return (
-    <div id="projects" className="h-fit p-16 bg-black">
+    <div id="projects" className="h-fit p-16 pt-20 bg-black">
       <div className="h-full snap-center">
-        <h2 className="title pb-16">Featured Projects</h2>
+        <h2 className="title py-8">Featured Projects</h2>
         <ProjectTwit />
       </div>
       <ProjectCart />
