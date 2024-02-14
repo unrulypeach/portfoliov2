@@ -12,6 +12,10 @@ module.exports = {
       iconbg: '#333333',
       icon: '#dddddd',
     },
+    screens: {
+      tablet: '601px',
+      desktop: '1024px',
+    },
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
