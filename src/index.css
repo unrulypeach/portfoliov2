@@ -41,11 +41,11 @@ h3.title {
 }
 
 .badge-styled {
-  @apply border-icon badge gap-2 h-6 mr-2 bg-iconbg
+  @apply border-icon badge gap-2 h-6 mr-2 mb-3 bg-iconbg
 }
 
 .btn-newpg {
-  @apply btn btn-sm bg-iconbg text-icon border-none h-10 hover:text-black hover:bg-icon
+  @apply btn btn-sm flex-1 desktop:flex-none bg-iconbg text-icon border-none h-10 hover:text-black hover:bg-icon
 }
 
 .input-containter {
