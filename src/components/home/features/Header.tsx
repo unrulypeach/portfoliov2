@@ -6,8 +6,7 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    // <div className="pl-8 fixed w-full">
-    <div className="fixed">
+    <div className={`fixed ${showMenu && 'bg-black'} z-10`}>
       <button className="p-4 desktop:hidden" onClick={() => setShowMenu(!showMenu)}>
         {menu}
       </button>
@@ -18,13 +17,13 @@ function Header() {
       >
         <a
           href="#home"
-          className="w-[inherit] py-12 btn btn-ghost text-title pl-10
+          className="w-[80%] py-12 btn btn-ghost text-title rounded-full
                     desktop:w-auto desktop:p-[15px]
-                    desktop:opacity-50 desktop:hover:opacity-100 hover:bg-[#1e2021] desktop:rounded-full"
+                    desktop:opacity-50 desktop:hover:opacity-100 hover:bg-[#1e2021] "
         >
           LC
         </a>
-        <NavBar />
+        <NavBar setShowMenu={setShowMenu} />
       </div>
     </div>
   );
