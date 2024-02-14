@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 function Title() {
   return (
-    <div className="text-[#b7c7e8] stroke-icon text-8xl font-bold pl-16 pb-16">
+    <div className="mt-auto text-[#b7c7e8] stroke-icon text-8xl font-bold pl-16 pb-16">
       <motion.svg
         variants={{
           hidden: { opacity: 0 },
