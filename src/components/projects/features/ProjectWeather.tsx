@@ -4,10 +4,17 @@ import { js, api, webpack, newtab } from 'assets/icons';
 
 function ProjectWeather() {
   return (
-    <div className="flex h-full my-40 snap-center">
+    <div
+      className="flex flex-col items-center h-screen py-24 snap-center
+                desktop:flex-row"
+    >
+      <div className="flex-1 desktop:order-2">
+        <img className="max-h-[50vh] desktop:max-w-[40vw]" src={weatherapp_fs} alt="" />
+      </div>
+
       <div className="flex flex-col px-8 self-center flex-1">
         <h3 className="title">Weather App</h3>
-        <div className="flex flex-wrap py-4">
+        <div className="flex flex-wrap pt-4">
           <div className="badge-styled">
             {js}
             <span className="text-icon">javascript</span>
@@ -26,20 +33,17 @@ function ProjectWeather() {
           through OpenWeatherMap. It is set up with Webpack to efficiently deploy and manage
           dependencies.
         </div>
-        <div className="py-4">
-          <a className="btn-newpg px-8 group" href="https://unrulypeach.github.io/weather-app/">
+        <div className="py-4 flex justify-between desktop:justify-start">
+          <a className="btn-newpg px-6 group" href="https://unrulypeach.github.io/weather-app/">
             Live Demo{newtab}
           </a>
           <a
-            className="ml-4 px-10 btn-newpg group"
+            className="px-6 ml-2 btn-newpg desktop:ml-4 group"
             href="https://github.com/unrulypeach/weather-app"
           >
             Repo {newtab}
           </a>
         </div>
-      </div>
-      <div className="flex-1">
-        <img className="max-w-[40vw]" src={weatherapp_fs} alt="" />
       </div>
     </div>
   );

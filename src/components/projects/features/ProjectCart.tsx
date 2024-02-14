@@ -4,10 +4,17 @@ import { react, tailwindcss, reactrouter, newtab } from 'assets/icons';
 
 function ProjectCart() {
   return (
-    <div className="flex my-40 h-full snap-center">
+    <div
+      className="flex flex-col items-center h-screen py-24 snap-center
+                  desktop:flex-row"
+    >
+      <div className="flex-1 desktop:order-2">
+        <img className="max-h-[50vh] desktop:max-w-[40vw]" src={shoppingcart_phone} alt="" />
+      </div>
+
       <div className="flex flex-col px-8 self-center flex-1">
         <h3 className="title">Shopping Cart</h3>
-        <div className="flex flex-wrap py-4">
+        <div className="flex flex-wrap pt-4">
           <div className="badge-styled">
             {react}
             <span className="text-icon">react</span>
@@ -25,20 +32,17 @@ function ProjectCart() {
           A casette store made with React and tailwindcss with routing handled by React Router.
           Users can add and delete items to their cart and continue shopping.
         </div>
-        <div className="py-4">
-          <a className="btn-newpg px-8 group" href="https://unrulypeach.github.io/shopping-cart/">
+        <div className="py-4 flex justify-between desktop:justify-start">
+          <a className="btn-newpg px-6 group" href="https://unrulypeach.github.io/shopping-cart/">
             Live Demo{newtab}
           </a>
           <a
-            className="ml-4 px-10 btn-newpg group"
+            className="px-6 ml-2 btn-newpg desktop:ml-4 group"
             href="https://github.com/unrulypeach/shopping-cart"
           >
             Repo {newtab}
           </a>
         </div>
-      </div>
-      <div className="flex-1">
-        <img className="max-w-[40vw]" src={shoppingcart_phone} alt="" />
       </div>
     </div>
   );

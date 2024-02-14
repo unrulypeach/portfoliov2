@@ -4,13 +4,17 @@ import { react, eslint, api, newtab } from 'assets/icons';
 
 function ProjectMemory() {
   return (
-    <div className="flex my-40 h-full snap-center">
+    <div
+      className="flex flex-col items-center h-screen py-24 snap-center
+                desktop:flex-row"
+    >
       <div className="flex-1">
-        <img className="max-w-[40vw]" src={memoryapp} alt="" />
+        <img className="max-h-[50vh] desktop:max-w-[40vw]" src={memoryapp} alt="" />
       </div>
+
       <div className="flex flex-col px-8 self-center flex-1">
         <h3 className="title">Memory Card Game</h3>
-        <div className="flex flex-wrap py-4">
+        <div className="flex flex-wrap pt-4">
           <div className="badge-styled">
             {react}
             <span className="text-icon">react</span>
@@ -24,16 +28,16 @@ function ProjectMemory() {
             <span className="text-icon">eslint</span>
           </div>
         </div>
-        <div className="pt-4 max-w-[700px] text-icon">
+        <div className="py-4 max-w-[700px] text-icon">
           A memory card game with 5 randomly selected characters from a set. Click on each image
           once as new sets are produced. Avoid clicking on any duplicates to win!
         </div>
-        <div className="py-4">
-          <a className="btn-newpg px-8 group" href="https://unrulypeach.github.io/memory-card/">
+        <div className="py-4 flex justify-between desktop:justify-start">
+          <a className="btn-newpg px-6 group" href="https://unrulypeach.github.io/memory-card/">
             Live Demo{newtab}
           </a>
           <a
-            className="ml-4 px-10 btn-newpg group"
+            className="px-6 ml-2 btn-newpg desktop:ml-4 group"
             href="https://github.com/unrulypeach/memory-card"
           >
             Repo {newtab}
