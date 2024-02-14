@@ -15,7 +15,10 @@ function ContactTitle() {
         <a className="cursor-pointer mr-4" href="https://www.linkedin.com/in/linda-chen-298213297/">
           <img className="max-h-[34px]" src={li} alt="linkedin logo" />
         </a>
-        <a className="cursor-pointer mr-4" href="mailto:lindachen.dev@gmail.com">
+        <a
+          className="cursor-pointer mr-4"
+          href={`mailto:lindachen.dev@gmail.com?subject=Let's connect`}
+        >
           <img className="max-h-[34px]" src={gm} alt="gmail logo" />
         </a>
       </div>

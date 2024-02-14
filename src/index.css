@@ -50,8 +50,8 @@ h3.title {
 
 .input-containter {
   @apply border border-title rounded-[4px] 
-  /* focus-within:outline focus-within:outline-blue focus-within:outline-[2px] 
-  focus-within:border-clear*/
+        /* focus-within:outline focus-within:outline-blue focus-within:outline-[2px] 
+        focus-within:border-clear*/
 }
 
 .input-name-signup {
@@ -61,16 +61,17 @@ h3.title {
 }
 
 .input-name-text-signup {
-  @apply absolute px-4 pt-[8px] text-[13px] leading-[15px] select-none
+  @apply absolute px-4 pt-[8px] text-[13px] leading-[15px] select-none text-title 
+      group-focus-within:text-blue-300
 }
 
 .input-text {
-  @apply text-xl w-full bg-lightBG
-  input rounded-none
-  focus:outline-none focus:border-none
-}
+  @apply text-xl w-full bg-lightBG text-title
+        input rounded-none
+        focus:outline-none focus:border-none
+      }
 
 .input-textarea {
-  @apply text-xl w-full bg-lightBG
-  textarea rounded-none focus:outline-none focus:border-none
+  @apply text-xl w-full bg-lightBG text-title
+        textarea rounded-none focus:outline-none focus:border-none
 }

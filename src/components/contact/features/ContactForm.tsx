@@ -5,6 +5,12 @@ function ContactForm() {
   const [email, setEmail] = useState('');
   const [msg, setMsg] = useState('');
 
+  const handleSubmit = () => {
+    const mailToLink = `mailto:lindachen.dev@gmail.com?subject=${name},%20want%20to%20connect&body=${msg}`;
+    window.location.href = mailToLink;
+    return false;
+  };
+
   return (
     <form className="pt-40 pl-10 flex-1">
       <div className="max-w-[30vw] flex flex-col p-4">
@@ -37,7 +43,7 @@ function ContactForm() {
             </label>
           </div>
         </div>
-        <div className="py-4 px-0">
+        {/* <div className="py-4 px-0">
           <div className="group border border-borderGrey rounded-[4px] focus-within:outline focus-within:outline-blue-300 focus-within:outline-[2px]">
             <label className="">
               <div className="flex flex-row relative">
@@ -65,7 +71,7 @@ function ContactForm() {
               </div>
             </label>
           </div>
-        </div>
+        </div> */}
         <div className="py-4 px-0">
           <div className="group border border-borderGrey rounded-[4px] focus-within:outline focus-within:outline-blue-300 focus-within:outline-[2px]">
             <label className="">
@@ -94,7 +100,15 @@ function ContactForm() {
             </label>
           </div>
         </div>
-        <button className="mt-4 btn bg-title hover:bg-icon text-lightBG w-full">Submit</button>
+        <a
+          className="mt-4 btn bg-title hover:bg-icon text-lightBG w-full"
+          // onClick={handleSubmit}
+          href={`mailto:lindachen.dev@gmail.com?subject=${encodeURIComponent(
+            name
+          )},%20want%20to%20connect&body=${encodeURIComponent(msg)}`}
+        >
+          Submit
+        </a>
       </div>
     </form>
   );
