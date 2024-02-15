@@ -6,8 +6,8 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className={`fixed ${showMenu && 'bg-black'} z-10`}>
-      <button className="p-4 desktop:hidden" onClick={() => setShowMenu(!showMenu)}>
+    <div className={`fixed ${showMenu && 'bg-black'} self-end z-10`}>
+      <button className="p-4 desktop:hidden float-right" onClick={() => setShowMenu(!showMenu)}>
         {menu}
       </button>
       <div

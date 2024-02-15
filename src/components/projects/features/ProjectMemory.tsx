@@ -9,7 +9,11 @@ function ProjectMemory() {
                 desktop:flex-row"
     >
       <div className="flex-1">
-        <img className="max-h-[50vh] desktop:max-w-[40vw]" src={memoryapp} alt="" />
+        <img
+          className="max-h-[50vh] desktop:max-h-none desktop:max-w-[40vw]"
+          src={memoryapp}
+          alt="3 Hearthstone character portraits"
+        />
       </div>
 
       <div className="flex flex-col px-8 self-center flex-1">

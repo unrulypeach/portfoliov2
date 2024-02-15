@@ -9,7 +9,11 @@ function ProjectWeather() {
                 desktop:flex-row"
     >
       <div className="flex-1 desktop:order-2">
-        <img className="max-h-[50vh] desktop:max-w-[40vw]" src={weatherapp_fs} alt="" />
+        <img
+          className="max-h-[50vh] desktop:max-h-none desktop:max-w-[40vw]"
+          src={weatherapp_fs}
+          alt="gameboy style weather report"
+        />
       </div>
 
       <div className="flex flex-col px-8 self-center flex-1">

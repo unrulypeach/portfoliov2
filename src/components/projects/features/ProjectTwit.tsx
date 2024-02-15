@@ -30,23 +30,21 @@ function ProjectTwit() {
                 desktop:flex-row"
     >
       <div className="flex-1">
-        <div className="">
-          <div className="relative">
-            <img className="max-h-[50vh] desktop:max-w-[40vw]" src={slide} alt="" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
-              <button
-                className="btn btn-circle bg-black border-none opacity-20 hover:opacity-90 hover:bg-black"
-                onClick={() => prevSlide()}
-              >
-                <span className="text-title">❮</span>
-              </button>
-              <button
-                className="btn btn-circle bg-black border-none opacity-20 hover:opacity-90 hover:bg-black"
-                onClick={() => nextSlide()}
-              >
-                <span className="text-title">❯</span>
-              </button>
-            </div>
+        <div className="relative max-h-[50vh] desktop:max-h-none desktop:max-w-[40vw]">
+          <img className="max-h-[inherit]" src={slide} alt="rotating images of twitter replica" />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
+            <button
+              className="btn btn-circle bg-black border-none opacity-20 hover:opacity-90 hover:bg-black"
+              onClick={() => prevSlide()}
+            >
+              <span className="text-title">❮</span>
+            </button>
+            <button
+              className="btn btn-circle bg-black border-none opacity-20 hover:opacity-90 hover:bg-black"
+              onClick={() => nextSlide()}
+            >
+              <span className="text-title">❯</span>
+            </button>
           </div>
         </div>
       </div>
