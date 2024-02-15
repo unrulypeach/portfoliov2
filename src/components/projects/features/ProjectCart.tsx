@@ -16,23 +16,23 @@ function ProjectCart() {
         />
       </div>
 
-      <div className="flex flex-col px-8 self-center flex-1">
+      <div className="flex flex-col px-8 self-center flex-1 desktop:items-end desktop:pr-16">
         <h3 className="title">Shopping Cart</h3>
         <div className="flex flex-wrap pt-4">
           <div className="badge-styled">
             {react}
-            <span className="text-icon">react</span>
+            <span className="text-texthov">react</span>
           </div>
           <div className="badge-styled">
             {reactrouter}
-            <span className="text-icon">react router</span>
+            <span className="text-texthov">react router</span>
           </div>
           <div className="badge-styled">
             {tailwindcss}
-            <span className="text-icon">tailwindcss</span>
+            <span className="text-texthov">tailwindcss</span>
           </div>
         </div>
-        <div className="py-4 max-w-[700px] text-icon">
+        <div className="py-4 max-w-[600px] text-texthov desktop:text-right">
           A casette store made with React and tailwindcss with routing handled by React Router.
           Users can add and delete items to their cart and continue shopping.
         </div>

@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <JumpToTop />
-      <div id="home" className="bg-black flex flex-col justify-between h-screen snap-center">
+      <div id="home" className="bg-bg flex flex-col justify-between h-screen snap-center">
         <Header />
         <Title />
       </div>

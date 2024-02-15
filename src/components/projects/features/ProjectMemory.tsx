@@ -10,7 +10,7 @@ function ProjectMemory() {
     >
       <div className="flex-1">
         <img
-          className="max-h-[50vh] desktop:max-h-none desktop:max-w-[40vw]"
+          className="max-h-[50vh] desktop:max-h-none desktop:max-w-[40vw] desktop:float-right"
           src={memoryapp}
           alt="3 Hearthstone character portraits"
         />
@@ -21,18 +21,18 @@ function ProjectMemory() {
         <div className="flex flex-wrap pt-4">
           <div className="badge-styled">
             {react}
-            <span className="text-icon">react</span>
+            <span className="text-texthov">react</span>
           </div>
           <div className="badge-styled">
             {api}
-            <span className="text-icon">rapid api</span>
+            <span className="text-texthov">rapid api</span>
           </div>
           <div className="badge-styled">
             {eslint}
-            <span className="text-icon">eslint</span>
+            <span className="text-texthov">eslint</span>
           </div>
         </div>
-        <div className="py-4 max-w-[700px] text-icon">
+        <div className="py-4 max-w-[600px] text-texthov">
           A memory card game with 5 randomly selected characters from a set. Click on each image
           once as new sets are produced. Avoid clicking on any duplicates to win!
         </div>

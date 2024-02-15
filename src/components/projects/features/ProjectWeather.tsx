@@ -16,23 +16,23 @@ function ProjectWeather() {
         />
       </div>
 
-      <div className="flex flex-col px-8 self-center flex-1">
+      <div className="flex flex-col px-8 self-center flex-1 desktop:items-end">
         <h3 className="title">Weather App</h3>
         <div className="flex flex-wrap pt-4">
           <div className="badge-styled">
             {js}
-            <span className="text-icon">javascript</span>
+            <span className="text-texthov">javascript</span>
           </div>
           <div className="badge-styled">
             {webpack}
-            <span className="text-icon">webpack</span>
+            <span className="text-texthov">webpack</span>
           </div>
           <div className="badge-styled">
             {api}
-            <span className="text-icon">openweathermap</span>
+            <span className="text-texthov">openweathermap</span>
           </div>
         </div>
-        <div className="py-4 max-w-[700px] text-icon">
+        <div className="py-4 max-w-[600px] text-texthov desktop:text-right">
           The weather app, built with JavaScript, provides real-time updates on weather conditions
           through OpenWeatherMap. It is set up with Webpack to efficiently deploy and manage
           dependencies.

@@ -14,8 +14,7 @@ function NavBtn({
     >
       <div
         className="py-12 btn btn-ghost text-title hover:bg-inherit rounded-full
-                  desktop:p-0 desktop:opacity-50 desktop:group-hover:opacity-100"
-        // className="btn btn-ghost text-title opacity-50 hover:opacity-100 hover:bg-[#1e2021] ml-8 w-60"
+                  desktop:p-0 opacity-60 group-hover:opacity-100"
       >
         {title.toUpperCase()}
       </div>

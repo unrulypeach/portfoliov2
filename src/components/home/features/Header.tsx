@@ -6,12 +6,12 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className={`fixed ${showMenu && 'bg-black'} self-end z-10`}>
+    <div className={`fixed ${showMenu && 'bg-bg'} self-end z-10`}>
       <button className="p-6 desktop:hidden float-right" onClick={() => setShowMenu(!showMenu)}>
         {menu}
       </button>
       <div
-        className={`mt-8 bg-black relative w-screen h-screen flex flex-col items-center
+        className={`mt-8 bg-bg relative w-screen h-screen flex flex-col items-center
                     desktop:flex-row desktop:justify-between desktop:bg-transparent desktop:h-auto
                     desktop:pl-8 ${showMenu ? 'block' : 'hidden'} desktop:flex`}
       >

@@ -30,7 +30,7 @@ function ProjectTwit() {
                 desktop:flex-row"
     >
       <div className="flex-1">
-        <div className="relative max-h-[50vh] desktop:max-h-none desktop:max-w-[40vw]">
+        <div className="relative max-h-[50vh] desktop:float-right desktop:max-h-none desktop:max-w-[40vw]">
           <img className="max-h-[inherit]" src={slide} alt="rotating images of twitter replica" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
             <button
@@ -54,26 +54,26 @@ function ProjectTwit() {
         <div className="flex flex-wrap pt-4">
           <div className="badge-styled">
             {react}
-            <span className="text-icon">react</span>
+            <span className="text-texthov">react</span>
           </div>
           <div className="badge-styled">
             {typescript}
-            <span className="text-icon">typescript</span>
+            <span className="text-texthov">typescript</span>
           </div>
           <div className="badge-styled">
             {nodejs}
-            <span className="text-icon">node.js</span>
+            <span className="text-texthov">node.js</span>
           </div>
           <div className="badge-styled">
             {mongodb}
-            <span className="text-icon">mongodb</span>
+            <span className="text-texthov">mongodb</span>
           </div>
           <div className="badge-styled">
             {express}
-            <span className="text-icon">express</span>
+            <span className="text-texthov">express</span>
           </div>
         </div>
-        <div className="py-4 max-w-[700px] text-icon">
+        <div className="py-4 max-w-[600px] text-texthov">
           A full-stack clone of Twitter with a meticulously replicated UI. It has a dedicated API
           endpoint and uses MongoDB for its database. Users can create an account, create posts,
           replies, follow users, and like posts!
