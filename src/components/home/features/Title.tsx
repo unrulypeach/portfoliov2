@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 //font weight regular
 function Title() {
   return (
-    <div className="mt-auto text-[#b7c7e8] stroke-icon text-8xl font-bold desktop:pb-24 desktop:px-[16%]">
+    //tablet:px-[10%]  desktopLg:px-[16%]
+    <div className="flex flex-col justify-center h-[inherit] text-[#b7c7e8] stroke-icon text-8xl font-bold px-[10%] desktopLg:px-[20%]">
       {/* LINDA CHEN */}
       <div>
         <motion.svg
@@ -16,6 +17,7 @@ function Title() {
               },
             },
           }}
+          className="my-10"
           width="100%"
           height="100%"
           viewBox="0 0 887.5 116.88"
@@ -52,7 +54,7 @@ function Title() {
               },
             },
           }}
-          className="my-12"
+          className="my-10"
           width="100%"
           height="100%"
           viewBox="0 0 887.578 116.88"
@@ -91,6 +93,7 @@ function Title() {
               },
             },
           }}
+          className="my-10"
           width="100%"
           height="100%"
           viewBox="0 0 853.984 116.878"

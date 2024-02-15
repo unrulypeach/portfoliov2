@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 // font weight - 100
 function TitleMobile() {
   return (
-    <div className="mt-[40%] px-[5%] text-[#b7c7e8] stroke-icon text-8xl font-bold">
+    <div className="flex flex-col justify-center h-[inherit] px-[9%] tablet:px-[12%] text-[#b7c7e8] stroke-icon text-8xl font-bold">
       {/* LINDA*/}
       <div>
         <motion.svg
@@ -16,7 +16,7 @@ function TitleMobile() {
               },
             },
           }}
-          className="my-8"
+          className="my-4"
           width="100%"
           height="100%"
           viewBox="-6 0 430 115"
@@ -50,7 +50,7 @@ function TitleMobile() {
               },
             },
           }}
-          className="my-8"
+          className="my-4"
           width="100%"
           height="100%"
           viewBox="-22 -4 450 124"
@@ -86,7 +86,7 @@ function TitleMobile() {
               },
             },
           }}
-          className="my-8"
+          className="mt-8 mb-4"
           width="100%"
           height="100%"
           viewBox="-6 -3 888 124"
@@ -125,7 +125,7 @@ function TitleMobile() {
               },
             },
           }}
-          className="my-6"
+          className="my-4"
           width="100%"
           height="100%"
           viewBox="-7 -3 853 124"
