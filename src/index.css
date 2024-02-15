@@ -36,12 +36,16 @@ h2.title {
   @apply text-title text-8xl font-black
 }
 
+h2.title-sm {
+  @apply text-title text-4xl font-black
+}
+
 h3.title {
   @apply text-title text-4xl font-bold
 }
 
 .badge-styled {
-  @apply border-icon badge gap-2 h-6 mr-2 mb-3 bg-iconbg
+  @apply border-text badge gap-2 h-6 mr-2 mb-3 bg-iconbg
 }
 
 .btn-newpg {

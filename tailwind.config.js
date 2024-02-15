@@ -6,7 +6,11 @@ module.exports = {
     colors: {
       ...colors,
       title: '#b7c7e8',
+      titleGrey: '#757c8a',
+      text: '#999999',
+      texthov: '#c7c5c1',
       paragraph: '#979aa1',
+      bg: '#181818',
       lightBG: '#1d232a',
       borderGrey: '#90a1c3',
       iconbg: '#333333',
