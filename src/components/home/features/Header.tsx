@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <div className={`fixed ${showMenu && 'bg-black'} self-end z-10`}>
-      <button className="p-4 desktop:hidden float-right" onClick={() => setShowMenu(!showMenu)}>
+      <button className="p-6 desktop:hidden float-right" onClick={() => setShowMenu(!showMenu)}>
         {menu}
       </button>
       <div
