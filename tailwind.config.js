@@ -18,7 +18,9 @@ module.exports = {
     },
     screens: {
       tablet: '601px',
+
       desktop: '1024px',
+      desktopLg: '1675px',
     },
     extend: {
       fontFamily: {
