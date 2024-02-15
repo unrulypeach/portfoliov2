@@ -1,28 +1,30 @@
 function AboutText() {
   return (
-    <div className="flex flex-col flex-1 pl-20">
-      <h2 className="title">About</h2>
-      <div className="py-8 text-title">
-        <div className="font-bold text-lg">Linda Chen</div>
+    // <div className="flex flex-col flex-1 pl-20">
+    <div className="flex flex-col flex-1 px-12">
+      <h2 className="title-sm">About Me</h2>
+      <div className="pt-6 text-[#818896]">
+        <div className="font-bold ">Linda Chen</div>
         <div>Full Stack Developer</div>
       </div>
-      <div className="text-icon">
-        <div className="py-8 max-w-[700px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+      <div className="text-texthov text-sm desktop:text-base desktop:max-w-[500px]">
+        <div className="pt-4">
+          Hi, I'm a self-taught MERN stack developer. My journey into programming began out of my
+          fascination with problem-solving and the efficiency of automating repetitive actions. With
+          all that I have learned, I am now able to translate an abundance of abstract concepts into
+          real-world applications with code.
         </div>
-        <div className=" max-w-[700px]">
-          Vietnam and New York, our worlds were far apart. Camp for me meant refugee sites, ration
-          lines; for Adam, summer and water sports. After we met in college, he gave me my first
-          bouquet. I plucked flowers from his gift (and the college grounds) to create my own
-          bouquet for him. “You don’t rebundle a gift,” he said. “Why waste money?” I countered. It
-          took us 30 years as a couple to finally agree that both are true: A gift shouldn’t be
-          re-gifted, but once given, a gift is no longer yours. Now, we’ve moved on to new
-          disagreements! — Oanh Ngo Usadi
+        <div className="pt-3">
+          I look forward to exploring new horizons, embracing new challenges and expanding my
+          expertise.
+        </div>
+        <div className="pt-3">
+          I succeeded on this journey through the guidance and resource of the open source
+          curriculum,{' '}
+          <a className="link link-hover" href="https://www.theodinproject.com/">
+            The Odin Project
+          </a>
+          .
         </div>
       </div>
     </div>
