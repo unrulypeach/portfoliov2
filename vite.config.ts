@@ -8,6 +8,7 @@ import svgrPlugin from 'vite-plugin-svgr';
 export default defineConfig({
   envDir: './env',
   plugins: [react(), tsconfigPaths(), svgrPlugin()],
+  base: 'portfoliov2',
   /* If proxy is needed
   server: {
     proxy: {
