@@ -1,17 +1,57 @@
+import { motion } from 'framer-motion';
 import NavBtn from './NavBtn';
 
-function NavBar({ setShowMenu }: { setShowMenu: React.Dispatch<React.SetStateAction<boolean>> }) {
+const variants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.3 },
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+};
+
+const logoVariants = {
+  open: {
+    scale: [2, 1],
+    transition: {
+      ease: 'easeOut',
+      duration: 0.2,
+    },
+  },
+  closed: {
+    scale: 0,
+    transition: {
+      ease: 'linear',
+      duration: 0.3,
+    },
+  },
+};
+
+function NavBar({ toggle, isOpen }: { isOpen: boolean; toggle: (i?: number | undefined) => void }) {
   return (
-    // <div className="flex justify-end py-5 pr-8">
-    <div
-      className="flex flex-col items-center w-full
-                desktop:w-auto desktop:flex-row desktop:pr-8"
+    <motion.div
+      variants={variants}
+      className={`flex flex-col items-center justify-center h-screen w-full 
+                 z-20 ${isOpen ? 'block' : 'none'}
+                desktop:w-auto desktop:flex-row desktop:pr-8 desktop:block`}
     >
-      <NavBtn title="about" setShowMenu={setShowMenu} />
-      <NavBtn title="projects" setShowMenu={setShowMenu} />
-      <NavBtn title="resume" setShowMenu={setShowMenu} />
-      <NavBtn title="contact" setShowMenu={setShowMenu} />
-    </div>
+      <motion.a
+        href="#home"
+        variants={logoVariants}
+        onClick={() => toggle()}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="w-auto mb-6 btn btn-ghost text-icon rounded-full z-[inherit]
+                desktop:w-auto desktop:p-[15px] text-base
+                desktop:opacity-50 desktop:hover:opacity-100 hover:underline "
+      >
+        LC
+      </motion.a>
+      <NavBtn title="about" toggle={toggle} />
+      <NavBtn title="projects" toggle={toggle} />
+      <NavBtn title="resume" toggle={toggle} />
+      <NavBtn title="contact" toggle={toggle} />
+    </motion.div>
   );
 }
 

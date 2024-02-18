@@ -41,13 +41,16 @@ h2.title-sm {
 }
 
 h3.title {
-  @apply text-title text-4xl font-bold
+  @apply text-title text-3xl font-semibold
 }
 
 .badge-styled {
-  @apply border-text badge gap-2 h-6 mr-2 mb-3 bg-iconbg
+  @apply border-text text-xs desktop:text-sm badge gap-2 h-6 mr-2 mb-3 bg-iconbg
 }
 
+.badge-styled span {
+  @apply hidden desktop:block
+}
 .btn-newpg {
   @apply btn btn-sm flex-1 desktop:flex-none bg-iconbg text-icon border-none h-10 hover:text-black hover:bg-icon
 }

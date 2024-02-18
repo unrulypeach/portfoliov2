@@ -38,7 +38,7 @@ function ProjectMemory() {
         </div>
         <div className="py-4 flex justify-between desktop:justify-start">
           <a className="btn-newpg px-6 group" href="https://unrulypeach.github.io/memory-card/">
-            Live Demo{newtab}
+            Live {newtab}
           </a>
           <a
             className="px-6 ml-2 btn-newpg desktop:ml-4 group"

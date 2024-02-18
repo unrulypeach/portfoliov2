@@ -52,35 +52,35 @@ function ProjectTwit() {
       <div className="flex flex-col px-8 self-center flex-1">
         <h3 className="title">Twitter Replicate</h3>
         <div className="flex flex-wrap pt-4">
-          <div className="badge-styled">
+          <div className="badge-styled" data-tip="react">
             {react}
             <span className="text-texthov">react</span>
           </div>
-          <div className="badge-styled">
+          <div className="badge-styled" data-tip="typescript">
             {typescript}
             <span className="text-texthov">typescript</span>
           </div>
-          <div className="badge-styled">
+          <div className="badge-styled" data-tip="node.js">
             {nodejs}
             <span className="text-texthov">node.js</span>
           </div>
-          <div className="badge-styled">
+          <div className="badge-styled" data-tip="mongodb">
             {mongodb}
             <span className="text-texthov">mongodb</span>
           </div>
-          <div className="badge-styled">
+          <div className="badge-styled" data-tip="express">
             {express}
             <span className="text-texthov">express</span>
           </div>
         </div>
-        <div className="py-4 max-w-[600px] text-texthov">
+        <div className="py-4 max-w-[600px] text-sm text-texthov">
           A full-stack clone of Twitter with a meticulously replicated UI. It has a dedicated API
           endpoint and uses MongoDB for its database. Users can create an account, create posts,
           replies, follow users, and like posts!
         </div>
         <div className="py-4 flex justify-between desktop:justify-start">
           <a className="btn-newpg px-6 group" href="https://twitter-replica-orpin.vercel.app/">
-            Live Demo{newtab}
+            Live {newtab}
           </a>
           <a
             className="px-6 ml-2 btn-newpg desktop:ml-4 group"

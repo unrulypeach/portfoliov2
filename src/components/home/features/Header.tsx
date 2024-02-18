@@ -1,31 +1,50 @@
-import { useState } from 'react';
+import { useRef } from 'react';
+import { motion, useCycle } from 'framer-motion';
+import { useDimensions } from './useDimensions';
 import NavBar from './NavBar';
-import { menu } from 'assets/icons';
+import { MenuToggle } from './menuToggle';
+
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 120% 0)`,
+    transition: {
+      type: 'spring',
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: 'circle(30px at 120% 0)',
+    transition: {
+      delay: 0.5,
+      type: 'spring',
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
 
 function Header() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
 
   return (
-    <div className={`fixed ${showMenu && 'bg-bg'} self-end z-10`}>
-      <button className="p-6 desktop:hidden float-right" onClick={() => setShowMenu(!showMenu)}>
-        {menu}
-      </button>
-      <div
-        className={`mt-8 bg-bg relative w-screen h-screen flex flex-col items-center
-                    desktop:flex-row desktop:justify-between desktop:bg-transparent desktop:h-auto
-                    desktop:pl-8 ${showMenu ? 'block' : 'hidden'} desktop:flex`}
-      >
-        <a
-          href="#home"
-          className="w-[80%] py-12 btn btn-ghost text-title rounded-full
-                    desktop:w-auto desktop:p-[15px]
-                    desktop:opacity-50 desktop:hover:opacity-100 hover:bg-[#1e2021] "
-        >
-          LC
-        </a>
-        <NavBar setShowMenu={setShowMenu} />
-      </div>
-    </div>
+    <motion.nav
+      initial={false}
+      animate={isOpen ? 'open' : 'closed'}
+      custom={height}
+      ref={containerRef}
+      className="self-end w-full absolute" //can't scroll with absolute
+    >
+      <MenuToggle toggle={toggleOpen} />
+      <motion.div
+        variants={sidebar}
+        className="absolute top-0 right-0 h-screen w-screen bg-lightBG"
+      />
+
+      <NavBar isOpen={isOpen} toggle={toggleOpen} />
+    </motion.nav>
   );
 }
 
