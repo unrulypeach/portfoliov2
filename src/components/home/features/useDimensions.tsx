@@ -10,7 +10,7 @@ export const useDimensions = (
     offsetWidth: number;
     width: number;
     height: number;
-  }>
+  } | null>
 ) => {
   const dimensions = useRef({ width: 0, height: 0 });
 
