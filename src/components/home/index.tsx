@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import HeaderDesktop from './features/HeaderDesktop';
 
 function Home() {
-  const [isMoreThan1024, setIsMoreThan1024] = useState(false);
+  const [isMoreThan1024, setIsMoreThan1024] = useState(true);
 
   const handleResize = () => {
     if (window.innerWidth >= 1024) {
@@ -19,6 +19,10 @@ function Home() {
   useEffect(() => {
     window.addEventListener('resize', handleResize);
   });
+
+  useEffect(() => {
+    handleResize();
+  }, []);
 
   return (
     <>
