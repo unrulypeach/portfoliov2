@@ -222,7 +222,7 @@ function Title() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center h-[inherit] text-[#b7c7e8] stroke-icon text-8xl font-bold px-[10%] desktopLg:px-[20%]">
+    <div className="relative top-[-80vh] flex flex-col justify-center h-[423px] text-[#b7c7e8] stroke-icon text-8xl font-bold px-[10%] desktopLg:px-[20%]">
       {/* LINDA CHEN */}
 
       <motion.svg

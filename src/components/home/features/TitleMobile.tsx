@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 // font weight - 100
 function TitleMobile() {
   return (
-    <div className="flex flex-col justify-center h-[inherit] px-[9%] tablet:px-[12%] text-[#b7c7e8] stroke-icon text-8xl font-bold">
+    <div className="relative top-[-80vh] tablet:top-[-85vh] flex flex-col justify-center h-[inherit] px-[9%] tablet:px-[12%] text-[#b7c7e8] stroke-icon text-8xl font-bold">
       {/* LINDA*/}
       <div>
         <motion.svg

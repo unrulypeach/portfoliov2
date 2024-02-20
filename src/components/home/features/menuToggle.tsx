@@ -7,7 +7,7 @@ const Path = (props) => (
 export const MenuToggle = ({ toggle }: { toggle: (i?: number | undefined) => void }) => (
   <motion.button
     whileHover={{ scale: 1.12, opacity: 0.9 }}
-    className="absolute p-4 pt-6 top-0 right-[4px] stroke opacity-40 z-10"
+    className="absolute p-4 pt-6 top-0 right-[4px] stroke opacity-40 z-30"
     onClick={() => toggle()}
   >
     <svg width="30" height="30" viewBox="0 0 23 23">

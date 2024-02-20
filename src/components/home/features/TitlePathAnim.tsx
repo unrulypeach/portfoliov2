@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
 
 //font weight regular
-function Title() {
+function TitlePathAnim() {
   return (
-    <div className="flex flex-col justify-center h-[inherit] text-[#b7c7e8] stroke-icon text-8xl font-bold px-[10%] desktopLg:px-[20%]">
+    <div
+      className="relative top-[-85vh] flex flex-col justify-center h-[inherit] text-[#b7c7e8] stroke-icon text-8xl font-bold
+                   px-[10%] desktop:static desktop:px-[15%] desktopLg:top-[-88vh] desktopXl:top-[-92vh] desktopLg:px-[20%]"
+    >
       {/* LINDA CHEN */}
       <div>
         <motion.svg
@@ -88,4 +91,4 @@ function Title() {
   );
 }
 
-export default Title;
+export default TitlePathAnim;

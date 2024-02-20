@@ -32,8 +32,7 @@ function NavBar({ toggle, isOpen }: { isOpen: boolean; toggle: (i?: number | und
     <motion.div
       variants={variants}
       className={`flex flex-col items-center justify-center h-screen w-full 
-                 z-20 ${isOpen ? 'block' : 'none'}
-                desktop:w-auto desktop:flex-row desktop:pr-8 desktop:block`}
+                 z-20 ${isOpen ? 'absolute' : 'none'}`} //desktop:w-auto desktop:flex-row desktop:pr-8 desktop:block
     >
       <motion.a
         href="#home"
@@ -41,9 +40,8 @@ function NavBar({ toggle, isOpen }: { isOpen: boolean; toggle: (i?: number | und
         onClick={() => toggle()}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="w-auto mb-6 btn btn-ghost text-icon rounded-full z-[inherit]
-                desktop:w-auto desktop:p-[15px] text-base
-                desktop:opacity-50 desktop:hover:opacity-100 hover:underline "
+        className="w-auto mb-6 btn btn-ghost text-icon rounded-full z-[inherit] text-base hover:underline"
+        // desktop:w-auto desktop:p-[15px] desktop:opacity-50 desktop:hover:opacity-100
       >
         LC
       </motion.a>

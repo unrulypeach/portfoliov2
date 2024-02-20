@@ -35,12 +35,13 @@ function Header() {
       animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}
-      className="self-end w-full absolute" //can't scroll with absolute
+      className="self-end w-full" //can't scroll with absolute
+      onScroll={(e) => console.log(e)}
     >
       <MenuToggle toggle={toggleOpen} />
       <motion.div
         variants={sidebar}
-        className="absolute top-0 right-0 h-screen w-screen bg-lightBG"
+        className="absolute top-0 right-0 h-screen w-screen z-20 bg-lightBG"
       />
 
       <NavBar isOpen={isOpen} toggle={toggleOpen} />

@@ -1,16 +1,18 @@
 import JumpToTop from 'components/features/JumpToTop';
 import Header from './features/Header';
-import Title from './features/Title';
+import TitlePathAnim from './features/TitlePathAnim';
 import TitleMobile from './features/TitleMobile';
 import { useState, useEffect } from 'react';
+import HeaderDesktop from './features/HeaderDesktop';
 
 function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMoreThan1024, setIsMoreThan1024] = useState(false);
+
   const handleResize = () => {
-    if (window.innerWidth < 800) {
-      setIsMobile(true);
+    if (window.innerWidth >= 1024) {
+      setIsMoreThan1024(true);
     } else {
-      setIsMobile(false);
+      setIsMoreThan1024(false);
     }
   };
 
@@ -21,9 +23,9 @@ function Home() {
   return (
     <>
       <JumpToTop />
-      <div id="home" className="bg-bg flex flex-col justify-between h-screen snap-center">
-        <Header />
-        {isMobile ? <TitleMobile /> : <Title />}
+      <div id="home" className="bg-bg flex flex-col h-screen snap-center">
+        {isMoreThan1024 ? <HeaderDesktop /> : <Header />}
+        {isMoreThan1024 ? <TitlePathAnim /> : <TitleMobile />}
       </div>
     </>
   );
