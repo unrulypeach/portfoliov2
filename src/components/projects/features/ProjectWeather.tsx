@@ -32,7 +32,7 @@ function ProjectWeather() {
             <span className="text-texthov">openweathermap</span>
           </div>
         </div>
-        <div className="py-4 max-w-[600px] text-texthov desktop:text-right">
+        <div className="py-4 max-w-[600px] text-texthov text-sm desktop:text-base desktop:text-right">
           The weather app, built with JavaScript, provides real-time updates on weather conditions
           through OpenWeatherMap. It is set up with Webpack to efficiently deploy and manage
           dependencies.

@@ -32,7 +32,7 @@ function ProjectMemory() {
             <span className="text-texthov">eslint</span>
           </div>
         </div>
-        <div className="py-4 max-w-[600px] text-texthov">
+        <div className="py-4 max-w-[600px] text-sm desktop:text-base text-texthov">
           A memory card game with 5 randomly selected characters from a set. Click on each image
           once as new sets are produced. Avoid clicking on any duplicates to win!
         </div>

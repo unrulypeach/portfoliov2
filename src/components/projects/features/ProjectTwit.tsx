@@ -73,7 +73,7 @@ function ProjectTwit() {
             <span className="text-texthov">express</span>
           </div>
         </div>
-        <div className="py-4 max-w-[600px] text-sm text-texthov">
+        <div className="py-4 max-w-[600px] text-sm desktop:text-base text-texthov">
           A full-stack clone of Twitter with a meticulously replicated UI. It has a dedicated API
           endpoint and uses MongoDB for its database. Users can create an account, create posts,
           replies, follow users, and like posts!

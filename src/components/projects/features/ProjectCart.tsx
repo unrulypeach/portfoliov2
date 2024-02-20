@@ -32,7 +32,7 @@ function ProjectCart() {
             <span className="text-texthov">tailwindcss</span>
           </div>
         </div>
-        <div className="py-4 max-w-[600px] text-texthov desktop:text-right">
+        <div className="py-4 max-w-[600px] text-texthov text-sm desktop:text-base desktop:text-right">
           A casette store made with React and tailwindcss with routing handled by React Router.
           Users can add and delete items to their cart and continue shopping.
         </div>
