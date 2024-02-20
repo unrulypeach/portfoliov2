@@ -1,6 +1,10 @@
-import { motion } from 'framer-motion';
+import { SVGMotionProps, motion } from 'framer-motion';
+import { RefAttributes } from 'react';
+import { JSX } from 'react/jsx-runtime';
 
-const Path = (props) => (
+const Path = (
+  props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & RefAttributes<SVGPathElement>
+) => (
   <motion.path fill="#b7c7e8" strokeWidth="3" stroke="#dddddd" strokeLinecap="round" {...props} />
 );
 
