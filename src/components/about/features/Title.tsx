@@ -1,8 +1,10 @@
-import { motion, useAnimate } from 'framer-motion';
-import { useEffect } from 'react';
+import { motion, useAnimate, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 //font weight regular
 function Title() {
+  const motionDiv = useRef(null);
+  const isInView = useInView(motionDiv);
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
 
@@ -105,6 +107,27 @@ function Title() {
         }
       ),
     ]);
+    await Promise.all([
+      animate(scope.current, { fx: '0.1', fy: '0.9', fr: '0.05', r: '0.75' }),
+      animate(
+        '#stop12',
+        { offset: '35%' },
+        {
+          ease: 'easeInOut',
+          duration: 1,
+        }
+      ),
+      animate(
+        '#stop11',
+        { stopColor: 'rgba(237, 235, 225, 0)' },
+        {
+          ease: 'linear',
+          duration: 1,
+        }
+      ),
+    ]);
+    await animate(scope.current, { fx: '0.1', fy: '0.9', fr: '0.05', r: '0.75' });
+    myAnimation1();
   }
 
   async function myAnimation2() {
@@ -214,15 +237,47 @@ function Title() {
         }
       ),
     ]);
+    await Promise.all([
+      animate2(
+        '#stop22',
+        { offset: '35%' },
+        {
+          ease: 'easeInOut',
+          duration: 1,
+        }
+      ),
+      animate2(
+        '#stop21',
+        { stopColor: 'rgba(237, 235, 225, 0)' },
+        {
+          ease: 'linear',
+          duration: 1,
+        }
+      ),
+      animate2(
+        scope2.current,
+        { fx: '0.9', fy: '0.9', fr: '0.05', r: '0.75' },
+        {
+          ease: 'linear',
+          duration: 1,
+        }
+      ),
+    ]);
+    myAnimation2();
   }
 
   useEffect(() => {
-    myAnimation1();
-    myAnimation2();
-  }, []);
+    if (isInView) {
+      myAnimation1();
+      myAnimation2();
+    }
+  }, [isInView]);
 
   return (
-    <div className="desktop:h-[inherit] mb-12 flex justify-center text-[#b7c7e8] stroke-icon text-8xl font-bold">
+    <div
+      ref={motionDiv}
+      className="desktop:h-[inherit] mb-12 flex justify-center text-[#b7c7e8] stroke-icon text-8xl font-bold"
+    >
       {/* LINDA CHEN */}
       <motion.svg
         width="100%"
@@ -231,7 +286,6 @@ function Title() {
         xmlns="http://www.w3.org/2000/motion.svg"
       >
         <defs>
-          {/* <motion.radialGradient ref={scope} id="gradient1" fx={0.1} fy={0.9} fr={0.05} r={0.75}> */}
           <motion.radialGradient
             ref={scope}
             id="gradient1"
@@ -240,7 +294,11 @@ function Title() {
             <stop id="stop11" offset="5%" stopColor="rgba(237, 235, 225, 0)" />
             <stop id="stop12" offset="35%" stopColor="rgba(0,0,0,0)" />
           </motion.radialGradient>
-          <motion.radialGradient ref={scope2} id="gradient2" fx={0.9} fy={0.9} fr={0.05} r={0.75}>
+          <motion.radialGradient
+            ref={scope2}
+            id="gradient2"
+            initial={{ fx: '0.9', fy: '0.9', fr: '0.05', r: '0.75' }}
+          >
             <stop id="stop21" offset="5%" stopColor="rgba(237, 235, 225, 0)" />
             <stop id="stop22" offset="35%" stopColor="rgba(0,0,0,0)" />
           </motion.radialGradient>
