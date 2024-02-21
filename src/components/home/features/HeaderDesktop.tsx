@@ -12,7 +12,7 @@ function HeaderDesktop() {
       <div className="flex">
         <NavBtn title="about" toggle={undefined} />
         <NavBtn title="projects" toggle={undefined} />
-        <NavBtn title="resume" toggle={undefined} />
+        {/* <NavBtn title="resume" toggle={undefined} /> */}
         <NavBtn title="contact" toggle={undefined} />
       </div>
     </div>

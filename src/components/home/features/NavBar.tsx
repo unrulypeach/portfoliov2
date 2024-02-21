@@ -47,7 +47,7 @@ function NavBar({ toggle, isOpen }: { isOpen: boolean; toggle: (i?: number | und
       </motion.a>
       <NavBtn title="about" toggle={toggle} />
       <NavBtn title="projects" toggle={toggle} />
-      <NavBtn title="resume" toggle={toggle} />
+      {/* <NavBtn title="resume" toggle={toggle} /> */}
       <NavBtn title="contact" toggle={toggle} />
     </motion.div>
   );

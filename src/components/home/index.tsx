@@ -1,4 +1,3 @@
-// import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import JumpToTop from 'components/features/JumpToTop';
 import Header from './features/Header';
@@ -7,27 +6,6 @@ import TitleMobile from './features/TitleMobile';
 import HeaderDesktop from './features/HeaderDesktop';
 
 function Home() {
-  /*   const [isMoreThan1024, setIsMoreThan1024] = useState(true);
-
-  const handleResize = () => {
-    if (window.innerWidth >= 1024) {
-      setIsMoreThan1024(true);
-    } else {
-      setIsMoreThan1024(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-  });
-
-  useEffect(() => {
-    window.addEventListener('load', () => {
-      handleResize();
-    });
-  }, []);
- */
-
   const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
 
   return (
