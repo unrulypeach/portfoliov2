@@ -21,7 +21,9 @@ function Home() {
   });
 
   useEffect(() => {
-    window.addEventListener('load', handleResize);
+    window.addEventListener('load', () => {
+      handleResize();
+    });
   }, []);
 
   return (
